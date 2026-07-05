@@ -66,9 +66,15 @@ http://localhost:8000
 
 veya cihaz IP'niz üzerinden erişebilirsiniz.
 
-## Geliştirme notu
+## SH DOSYASI OLARAK SİSTEM KURULUMU
+İlk olarak ana klasöre gidiniz.
+cd Nefor
 
-Bu proje bir prototip / demo sistemdir. Gerçek bir mobil işletim sistemi gibi görünse de, temel amaç kullanıcı deneyimini ve arayüz akışlarını güçlü bir şekilde simüle etmektir.
+İkinci olarak kurulum betiğini çalıştırınız.
+chmod +x install.sh start.sh
+
+Üçüncü olarak kurulumu başlatınız.
+./install.sh
 
 ## İleriye dönük fikirler
 
