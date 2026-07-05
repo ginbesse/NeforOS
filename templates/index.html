@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeforOS</title>
+    <link rel="stylesheet" href="/static/app.css" />
+  </head>
+  <body>
+    <main class="device-shell">
+      <section class="phone-frame">
+        <div class="status-bar">
+          <span id="timeLabel">--:--</span>
+          <div class="status-icons">
+            <span>5G</span>
+            <span>🔋 86%</span>
+          </div>
+        </div>
+
+        <div class="screen">
+          <div class="welcome-card">
+            <h1>NeforOS</h1>
+            <p>Professional mobile operating system shell with realistic battery, store, browser, messages, and camera services.</p>
+            <div class="button-row">
+              <button id="setupButton">Complete Setup</button>
+              <button id="chargeButton" class="secondary">Charge</button>
+              <button id="homeButton" class="secondary">Home</button>
+            </div>
+          </div>
+
+          <div class="widget-row">
+            <article class="widget weather-widget">
+              <h2>Weather</h2>
+              <div id="weatherValue">Loading…</div>
+            </article>
+            <article class="widget quote-widget">
+              <h2>Daily Insight</h2>
+              <div id="quoteValue">Loading…</div>
+            </article>
+          </div>
+
+          <div class="widget-row">
+            <article class="widget system-widget">
+              <h2>Battery</h2>
+              <div id="batteryValue">Loading…</div>
+            </article>
+            <article class="widget store-widget">
+              <h2>Store</h2>
+              <div id="storeValue">Loading…</div>
+            </article>
+          </div>
+
+          <section class="app-area">
+            <div class="section-title">System Applications</div>
+            <div id="appGrid" class="app-grid"></div>
+          </section>
+
+          <section class="app-area">
+            <div class="section-title">Active Session</div>
+            <div class="service-panel">
+              <div>Current app: <span id="activeAppLabel">Home</span></div>
+              <div>Browser: <span id="browserStatus">Ready</span></div>
+              <div>Messages: <span id="messagesStatus">Connected</span></div>
+              <div>Contacts: <span id="contactPermissionLabel">Pending</span></div>
+              <div>Camera: <span id="cameraStatus">Ultra ready</span></div>
+              <div>Live stream: <span id="streamStatus">Idle</span></div>
+            </div>
+          </section>
+
+          <section class="app-area app-screen-panel">
+            <div class="section-title">Active App Screen</div>
+            <div id="appScreen" class="app-screen-card">
+              <h3>Home</h3>
+              <p>Select an app to open its operating-system screen.</p>
+            </div>
+          </section>
+
+          <section class="app-area">
+            <div class="section-title">Live Workflows</div>
+            <div id="workflowPanel" class="workflow-panel"></div>
+          </section>
+
+          <section class="app-area browser-panel">
+            <div class="section-title">Research Browser</div>
+            <div class="browser-toolbar">
+              <input id="searchInput" type="text" placeholder="Search the web with Google" />
+              <button id="searchButton">Search</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+          </section>
+
+          <section class="app-area gallery-panel">
+            <div class="section-title">Gallery</div>
+            <div class="gallery-toolbar">
+              <input id="galleryInput" type="text" placeholder="Search gallery topics" />
+              <button id="galleryButton">Load</button>
+            </div>
+            <div class="gallery-compose">
+              <input id="galleryTitle" placeholder="Title" />
+              <input id="galleryDescription" placeholder="Description" />
+              <input id="galleryUrl" placeholder="Image URL" />
+              <button id="galleryUploadButton">Upload</button>
+              <button id="galleryAlbumButton" class="secondary">Create Album</button>
+            </div>
+            <div id="galleryResults" class="gallery-results"></div>
+          </section>
+        </div>
+
+        <div class="dock">
+          <button class="dock-icon active">⌂</button>
+          <button class="dock-icon">▶</button>
+          <button class="dock-icon">⚙</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
