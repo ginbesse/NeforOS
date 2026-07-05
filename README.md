@@ -1,85 +1,75 @@
 # NeforOS
 
-NeforOS, gerçekçi bir mobil işletim sistemi hissi veren, tarayıcı üzerinden çalışan bir web tabanlı shell projesidir. Instagram, WhatsApp, Netflix, mesaj, kamera, tarayıcı, galeri ve mağaza akışlarını taklit eden ama kullanıcı etkileşimiyle çalışan bir deneyim sunar.
+NeforOS is a realistic mobile operating system shell project. It offers an experience that mimics Instagram, WhatsApp, Netflix, messaging, camera, browser, gallery, and store feeds, but operates through user interaction.
 
-## Neden bu proje popüler olabilir?
+## Features
 
-- Gerçek telefon hissi veren arayüz
-- Akıllı ekran, canlı durumlar, mesaj ve çağrı akışları
-- Galeri, yükleme, favori ve albüm oluşturma gibi kullanıcı odaklı deneyimler
-- Termux üzerinde kolayca kurulum
-- Mobil cihazınıza benzer bir sanal işletim sistemi gibi çalışır
+- Home screen and application launch
+- Battery, storage, network, and system status
+- Browser search stream
+- Messaging, contact permissions, and conversation history
+- Camera preview and call stream
+- Gallery: image uploading, favorites, album creation
+- Store-like setup flow
 
-## Özellikler
+## Installation
 
-- Ana ekran ve uygulama başlatma
-- Batarya, depolama, ağ ve sistem durumu
-- Browser arama akışı
-- Mesajlaşma, kişi izni ve konuşma geçmişi
-- Kamera önizleme ve çağrı akışı
-- Galeri: görsel yükleme, favori, albüm oluşturma
-- Mağaza benzeri kurulum akışı
-
-## Kurulum
-
-### 1) Depoyu klonla
+### 1) Clone the repository
 
 ```bash
 git clone <repo-url>
 cd Nefor
 ```
 
-### 2) Python bağımlılıklarını kur
+### 2) Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3) Uygulamayı çalıştır
+### 3) Run the application
 
 ```bash
 python app.py
 ```
 
-Ardından tarayıcıda şu adrese git:
+Then go to the following address in the browser:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-## Termux ile kurulum
+## Installation with Termux
 
-Termux üzerinde çalıştırmak oldukça kolaydır:
+Running it on Termux is quite easy:
 
 ```bash
 pkg update && pkg upgrade
-pkg install python git
+pkg install `python git
 pip install -r requirements.txt
 python app.py
 ```
-
-Daha sonra cihazınızdaki bir tarayıcıdan:
+Then, from a browser on your device:
 
 ```text
 http://localhost:8000
 ```
+or you can access it via your device IP.
 
-veya cihaz IP'niz üzerinden erişebilirsiniz.
-
-## SH DOSYASI OLARAK SİSTEM KURULUMU
-İlk olarak ana klasöre gidiniz.
+## SYSTEM INSTALLATION AS AN SH FILE
+First, go to the main folder.
 cd Nefor
 
-İkinci olarak kurulum betiğini çalıştırınız.
+Secondly, run the installation script.
 chmod +x install.sh start.sh
 
-Üçüncü olarak kurulumu başlatınız.
+Thirdly, start the installation.
 ./install.sh
 
-## İleriye dönük fikirler
+## Future Ideas
 
-- Gerçek dosya sistemi desteği
-- Kamera ve galeri için medya yükleme
-- Daha gerçekçi uygulama geçişleri
-- Arka planda çalışan servisler
-- Termux ve Android cihazlarla daha derin entegrasyon
+- Real file system support
+- Media loading for camera and gallery
+- More realistic application transitions
+- Background services
+- Deeper integration with Termux and Android devices
